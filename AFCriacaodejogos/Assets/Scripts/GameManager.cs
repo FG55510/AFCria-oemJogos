@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public SO_GameData gameData;
     public static UIManager ui;
-    public Player player;
+    public GameObject player;
     public NextFase ff;
     
 
@@ -35,8 +35,8 @@ public class GameManager : MonoBehaviour
     {
         ui = FindAnyObjectByType<UIManager>();
         score = gameData.score;
-        ui.ChangeScore(score);
         life = gameData.life;
+        ui.ChangeScore(score);
         ui.ChangeLife(life);
         ff.enabled = false;
     }
@@ -53,7 +53,9 @@ public class GameManager : MonoBehaviour
         life = gameData.life;
         ui.ChangeLife(life);
         if(life<=0){
-            player.enabled = false; 
+            player.GetComponent<Player>().enabled = false;
+           Teste ta = player.GetComponent<Teste>();
+            ta.Death();
             Lose();
 
         }

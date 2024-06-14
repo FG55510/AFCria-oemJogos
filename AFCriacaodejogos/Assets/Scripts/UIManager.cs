@@ -14,8 +14,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        txtLife.text = "Life: 3";
-        txtScore.text = "Score: 0";
+        
         txtEnd.text = "";
         chave.enabled = false;
     }
