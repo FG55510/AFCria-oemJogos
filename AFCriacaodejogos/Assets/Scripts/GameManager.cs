@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public SO_GameData gameData;
     public static UIManager ui;
-    public GameObject player;
+    public Player player;
     public NextFase ff;
     
 
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
         life = gameData.life;
         ui.ChangeLife(life);
         if(life<=0){
-            Destroy(player);
+            player.enabled = false; 
             Lose();
 
         }

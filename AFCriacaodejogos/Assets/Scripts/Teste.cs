@@ -22,4 +22,8 @@ public class Teste : MonoBehaviour
 
 		
     }
+    public void Death()
+    {
+        anim.SetTrigger("died");
+    }
 }
