@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Teste2.unity
     guid: 93abbe475c3342849a12409116d9b2bd
+  - enabled: 1
+    path: Assets/Scenes/BugLife2.unity
+    guid: ac849d0775d2429469afa784ff071863
+  - enabled: 1
+    path: Assets/Scenes/BugLife1.unity
+    guid: ab0710a62f4ea3849b52f6dbb8a4283c
   m_configObjects: {}
