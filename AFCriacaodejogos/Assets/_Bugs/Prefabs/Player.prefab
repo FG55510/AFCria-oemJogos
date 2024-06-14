@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 7875923703561179508}
   - component: {fileID: 7875923703561179507}
   - component: {fileID: 1523428251285786683}
+  - component: {fileID: 7800180580111835026}
+  - component: {fileID: 7683907684872037405}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -205,8 +207,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 20
+  m_LinearDrag: 5
+  m_AngularDrag: 50
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -275,3 +277,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7800180580111835026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875923703561179501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e04e9896c8cb764388cc1b464ce8db1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 2
+  torque: 2
+  velocity: {x: 0, y: 0}
+--- !u!114 &7683907684872037405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875923703561179501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae03eaf40efb964aa6108321857cc07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
